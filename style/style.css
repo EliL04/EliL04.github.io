@@ -1,0 +1,220 @@
+/* General Page Setup */
+body {
+    font-family: 'Arial', sans-serif; /* fallback font */
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #7ec8e3, #b9d7e8);
+    padding: 50px 20px;
+    color: #ffffff;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif; /* Apply DM Sans to header */
+    font-size: 3em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: lighter;
+    font-family: 'DM Sans', sans-serif; /* Apply DM Sans to paragraph */
+}
+
+h2, h3 {
+    font-family: 'DM Sans', sans-serif; /* Apply DM Sans to section headers */
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Section Styling with Gradient Background */
+section {
+    background: linear-gradient(135deg, #d2e7fc, #ffffff);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+/* Photo Styling */
+.photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px 0;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.button {
+    background-color: #7ec8e3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #66b7d1;
+}
+
+/* List Styling for Skills */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Footer Styling */
+footer {
+    background: #7ec8e3;
+    color: #fff;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+/* Section Styling */
+.intro-content {
+    display: flex; /* Use flexbox to align the children horizontally */
+    align-items: center; /* Align items vertically centered */
+    justify-content: center; /* Optional: if you want the content to be centered horizontally */
+    gap: 20px; /* Add some space between the text and the image */
+}
+
+.intro-content p {
+    font-size: 1.2em;
+    max-width: 600px; /* Limit text width for readability */
+    margin: 0;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0;
+}
+
+/* Projects Section */
+.projects {
+    margin-top: 40px;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Flexbox Layout for Each Project */
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Image Styling */
+.project-image {
+    width: 250px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Project Description */
+.project-description {
+    flex-grow: 1; /* Allow text to take up the remaining space */
+}
+
+.project-description p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #555;
+}
+
+.project-description a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Button Styling */
+.button {
+    background-color: #7ec8e3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #66b7d1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
