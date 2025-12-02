@@ -10,6 +10,19 @@
 
 <body>
 
+    <nav class="sidebar">
+    <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
 <header>
     <h1>Eli Labrador</h1>
     <p>Computer Science undergraduate,<br>University of Washington Tacoma</p>
@@ -17,7 +30,7 @@
 
 <!-- Home / Introduction -->
 <div class="container">
-<section class="intro" style="margin-top: 30px;">
+<section class="intro" id="intro" style="margin-top: 30px;">
     <h2>Introduction</h2>
     <div class="intro-content">
         <p>I'm Eli Labrador, a Computer Science major attending the University of Washington Tacoma with an interest in UX/UI design and creative software.</p>
@@ -27,25 +40,44 @@
 
 
     <!-- About Me Section -->
-    <section class="about">
+    <section class="about" id="about">
         <h2>About Me</h2>
         <p>I am a Computer Science major, currently studying at the University of Washington Tacoma. I'm planning to go into UX/UI design, which seems to be much more relevant than ever in recent years, due to bloat, confusing navigation, inconsistent menus, and monetization being held over user experience in many popular apps and software.
 <br>I've always been an artist and creator, so I'd also love to make or work on creative software that's inexpensive, easy to use, and includes full, robust features. From personal experience, an ideal creative workflow includes software that is straight to the point and simply does what it says it can, without any unnecessary roadblocks getting in the way of the process.</p>
     </section>
 
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h2>Education</h2>
+        <p>I began my Computer Science degree at Pierce College Fort Steilacoom, where I completed my first two years of requirements and graduated with honors.
+            <br>I now attend the University of Washington Tacoma, where I plan to finish my degree and work on some personal projects on the side.
+        </p>
+    </section>
+
     <!-- Projects Section -->
-<section class="projects">
+<section class="projects" id="projects">
     <h2>Projects</h2>
 
     <div class="project">
-        <h3>Project Placeholder</h3>
+        <h3>Road Rage</h3>
         <div class="project-content">
             <!-- <img src="https://EliL04.github.io/img/placeholder-project.png" class="project-image"> -->
-            <div class="project-description" style="background-image: url('https://EliL04.github.io/img/placeholder-project.png'); max-width: 660px; border-radius: 10px;">
-                <p style="color:white; background-color: rgba(0, 0, 0, 0.25);"><strong>Name</strong></p>
-                <p style="color:white; background-color: rgba(0, 0, 0, 0.25);">This is a placeholder for a project. When I finish more projects, I'll add them here!</p>
-                <p style="color:white; background-color: rgba(0, 0, 0, 0.25);"><strong>Technologies used:</strong> Languages or software will go here.</p>
-                <a href="https://github.com/elil04/" target="_blank" class="button" style="margin-bottom: 16px;">Project link will go here.</a>
+            <div class="project-description" style="background-image: url('img/project-roadrage.png'); background-size: cover; max-width: 660px; border-radius: 10px; background-color: rgba(0,0,0,0.5); background-blend-mode: multiply;">
+                <p style="color:white; background-color: rgba(0, 0, 0, 0.5); margin-left:10px; margin-right:10px;">A basic traffic simulation completed for class at UWT.
+                    <br>Different vehicles interact with each other and the environment in different ways, simulating how traffic might flow through a network of roads (given the different rules of each vehicle).</p>
+                <p style="color:white; background-color: rgba(0, 0, 0, 0.5);"><strong>Technologies used:</strong> Java, IntelliJ, Git</p>
+                <a href="https://github.com/elil04/" target="_blank" class="button" style="margin-bottom: 16px;">Road Rage on GitHub</a>
+            </div>
+        </div>
+
+        <h3>Tetris Frontend</h3>
+        <div class="project-content">
+            <!-- <img src="https://EliL04.github.io/img/placeholder-project.png" class="project-image"> -->
+            <div class="project-description" style="background-image: url('img/project-tetris.png'); background-size: cover; max-width: 660px; border-radius: 10px; background-color: rgba(0,0,0,0.5); background-blend-mode: multiply;">
+                <p style="color:white; background-color: rgba(0, 0, 0, 0.5);">This is a work in progress. It's a group project for class at UWT.
+                    <br>We're currently working on programming the frontend to a Tetris game. The goal is to create a fully playable version of Tetris.</p>
+                <p style="color:white; background-color: rgba(0, 0, 0, 0.5);"><strong>Technologies used:</strong> Java, IntelliJ, Git</p>
+                <a href="https://github.com/elil04/" target="_blank" class="button" style="margin-bottom: 16px;">GitHub link will go here.</a>
             </div>
         </div>
     </div>
@@ -53,33 +85,65 @@
 
 
     <!-- Skills Section -->
-    <section class="skills">
+    <section class="skills" id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Web development (HTML, CSS, and JavaScript)</li>
-            <li>Game development (GameMaker Studio, Godot)</li>
-	    <li>Java</li>
-	    <li>Visual Studio</li>
-	    <li>VS Code</li>
-	    <li>IntelliJ IDEA</li>
-	    <li>Git</li>
-        </ul>
+        <div class="tableSetter">
+        <table class="silverware">
+            <tr><th>Tools</th></tr>
+            <tr>
+                <td>Visual Studio</td>
+            </tr>
+             <tr>
+                <td>VS Code</td>
+            </tr>
+             <tr>
+                <td>IntelliJ IDEA</td>
+            </tr>
+             <tr>
+                <td>Git</td>
+             </tr>
+             <tr>
+                <td>GameMaker</td>
+            </tr>
+             <tr>
+                <td>Godot</td>
+            </tr>
+        </table>
+        <table class="silverware">
+            <tr><th>Languages</th></tr>
+            <tr>
+                <td>HTML</td>
+            </tr>
+             <tr>
+                <td>JavaScript</td>
+            </tr>
+             <tr>
+                <td>Java</td>
+            </tr>
+             <tr>
+                <td>Python</td>
+             </tr>
+             <tr>
+                <td>C#</td>
+            </tr>
+        </table>
+        </div>
     </section>
 
     <!-- Experience Section -->
-    <section class="experience">
+    <section class="experience" id="experience">
         <h2>Experience</h2>
-        <p>Future experience will go here.</p>
+        <p>Further experience will go here.</p>
     </section>
 
     <!-- Resume Section -->
-    <section class="resume">
+    <section class="resume" id="resume">
         <h2>Resume</h2>
-        <p>In the future, a resume will be available <a href="resume.pdf" class="button">here</a>.</p>
+        <p>My resume will be available <a href="resume.pdf" class="button">here</a>.</p>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>Contact</h2>
         <p>Email me at <a href="mailto:elil04@uw.edu">elil04@uw.edu</a></p>
         <p>Find me on <a href="https://www.linkedin.com/in/elilabrador" target="_blank">LinkedIn</a> and <a href="https://github.com/elil04" target="_blank">GitHub</a>.</p>
